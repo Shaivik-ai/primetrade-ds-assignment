@@ -17,7 +17,7 @@ The analysis seeks to answer questions such as:
 
 ## **Repository Structure**
 
-ds\_\<your\_name\>/  
+ds\_shaivik/  
 ├── notebook\_1.ipynb       \# The main Google Colab notebook with all analysis.  
 ├── ds\_report.pdf          \# A PDF report summarizing key findings and insights.  
 ├── csv\_files/  
