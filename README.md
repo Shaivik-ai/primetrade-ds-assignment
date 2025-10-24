@@ -1,1 +1,56 @@
-# ds_shaivik
+# **Data Science Assignment: Trader Sentiment Analysis**
+
+This project is a submission for the Data Science Internship at Primetrade.ai.
+
+Candidate: Shaivik Shende  
+Date: 24-10-25
+
+## **Project Objective**
+
+The goal of this analysis is to explore the relationship between cryptocurrency trader behavior and overall market sentiment, as defined by the "Fear & Greed Index."
+
+The analysis seeks to answer questions such as:
+
+* How do trading metrics (PnL, leverage, volume) differ between "Fear" and "Greed" market periods?  
+* Can we identify traders who consistently perform well (or poorly) in specific sentiment regimes?  
+* What correlations exist between sentiment and trading outcomes?
+
+## **Repository Structure**
+
+ds\_\<your\_name\>/  
+├── notebook\_1.ipynb       \# The main Google Colab notebook with all analysis.  
+├── ds\_report.pdf          \# A PDF report summarizing key findings and insights.  
+├── csv\_files/  
+│   └── merged\_data.csv    \# The processed dataset combining trades and sentiment.  
+├── outputs/  
+│   ├── pnl\_distribution.png \# Boxplot of PnL vs. Sentiment  
+│   └── top\_traders\_fear.png \# Bar chart of Top 5 traders in "Fear" markets  
+└── README.md              \# This file.
+
+## **Methodology**
+
+1. **Data Loading:** Loaded the two provided datasets: Historical Trader Data.csv and Fear & Greed Index.csv.  
+2. **Data Preprocessing:**  
+   * Converted the trader data's time (nanoseconds) into a standard datetime object.  
+   * Created a normalized Date column in the trader data.  
+   * Converted the sentiment data's Date column into a datetime object.  
+   * Merged the two datasets on this common Date column.  
+3. **Exploratory Data Analysis (EDA):**  
+   * Grouped the merged data by sentiment Classification (Fear/Greed).  
+   * Analyzed key metrics: average PnL, total PnL, average leverage, and trade count.  
+   * Grouped data by individual account and Classification to rank traders.  
+4. **Visualization:** Used Seaborn and Matplotlib to create visualizations for the final report.
+
+## **Key Findings**
+
+*\[Briefly summarize your 2-3 most important findings here. This should match your ds\_report.pdf.\]*
+
+* **Finding 1:** \[Example: While overall PnL was higher during "Greed", the median PnL per trade was slightly negative, suggesting many small losses. "Fear" periods showed higher PnL volatility.\]  
+* **Finding 3:** \[Example: A list of top 5 "contrarian" traders was identified who generated over 70% of their total profit during "Fear" markets. (See report for details)\]
+
+## **How to Run**
+
+1. Clone this repository.  
+2. The primary analysis is in notebook\_1.ipynb.  
+3. A live, runnable version is available as a Google Colab notebook here:  
+   \[Paste your 'Anyone with the link' Google Colab share link here\]
